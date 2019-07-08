@@ -5,11 +5,11 @@
 A generated **flow**ground connector for the Real-Time Bus Predictions API (version 1.0).
 
 Generated from: https://api.apis.guru/v2/specs/wmata.com/bus-realtime/1.0/swagger.json<br/>
-Generated at: 2019-05-07T17:44:58+03:00
+Generated at: 2019-07-08T14:36:02+03:00
 
 ## API Description
 
-Real-time bus prediction methods.
+Real-time bus prediction methods.<br/>
 
 ## Authorization
 
@@ -18,189 +18,187 @@ Supported authorization schemes:
 ## Actions
 
 ### XML - Next Buses
+<blockquote><h4 class="text-primary">Description</h4>
 
-> <h4 class="text-primary">Description</h4><br/>
-> <br/>
-> <p>Returns next bus arrival times at a stop.</p><br/>
-> <br/>
-> <h4 class="text-primary">Response Elements</h4><br/>
-> <br/>
-> <table class="table table-condensed table-hover"><br/>
-> <thead><br/>
-> <tr><br/>
-> <th class="col-md-3">Element</th><br/>
-> <br/>
-> <th>Description</th><br/>
-> </tr><br/>
-> </thead><br/>
-> <br/>
-> <tbody><br/>
-> <tr><br/>
-> <td>Predictions</td><br/>
-> <br/>
-> <td><br/>
-> Array containing bus predictions (<a href=<br/>
-> "#NextBusPrediction">NextBusPrediction</a>).<br/>
-> </td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>StopName</td><br/>
-> <br/>
-> <td>Full name of the given StopID.</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td colspan="2"><br/>
-> <div class="text-primary" style="margin-top: 1em"><br/>
-> <a id="NextBusPrediction" name=<br/>
-> "NextBusPrediction">NextBusPrediction Elements</a><br/>
-> </div><br/>
-> </td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>DirectionNum</td><br/>
-> <br/>
-> <td>Denotes a binary direction (0 or 1) of the bus. There is no<br/>
-> specific mapping to direction, but a different value for the same<br/>
-> route signifies that the buses are traveling in opposite<br/>
-> directions. Use the DirectionText element to show the actual<br/>
-> destination of the bus.</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>DirectionText</td><br/>
-> <br/>
-> <td>Customer-friendly description of direction and destination for<br/>
-> a bus.</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>Minutes</td><br/>
-> <br/>
-> <td>Minutes until bus arrival at this stop. Numeric value.</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>RouteID</td><br/>
-> <br/>
-> <td>Base route name as shown on the bus. This can be used in other<br/>
-> bus-related methods. Note that all variants will be shown as their<br/>
-> base route names (i.e.: 10Av1 and 10Av2 will be shown as 10A).</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>TripID</td><br/>
-> <br/>
-> <td>Trip identifier. This can be correlated with the data in our<br/>
-> bus schedule information as well as bus positions.</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>VehicleID</td><br/>
-> <br/>
-> <td>Bus identifier. This can be correlated with results returned<br/>
-> from bus positions.</td><br/>
-> </tr><br/>
-> </tbody><br/>
-> </table>
+<p>Returns next bus arrival times at a stop.</p>
+
+<h4 class="text-primary">Response Elements</h4>
+
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th class="col-md-3">Element</th>
+
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Predictions</td>
+
+<td>
+Array containing bus predictions (<a href=
+"#NextBusPrediction">NextBusPrediction</a>).
+</td>
+</tr>
+
+<tr>
+<td>StopName</td>
+
+<td>Full name of the given StopID.</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<div class="text-primary" style="margin-top: 1em">
+<a id="NextBusPrediction" name=
+"NextBusPrediction">NextBusPrediction Elements</a>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>DirectionNum</td>
+
+<td>Denotes a binary direction (0 or 1) of the bus. There is no
+specific mapping to direction, but a different value for the same
+route signifies that the buses are traveling in opposite
+directions. Use the DirectionText element to show the actual
+destination of the bus.</td>
+</tr>
+
+<tr>
+<td>DirectionText</td>
+
+<td>Customer-friendly description of direction and destination for
+a bus.</td>
+</tr>
+
+<tr>
+<td>Minutes</td>
+
+<td>Minutes until bus arrival at this stop. Numeric value.</td>
+</tr>
+
+<tr>
+<td>RouteID</td>
+
+<td>Base route name as shown on the bus. This can be used in other
+bus-related methods. Note that all variants will be shown as their
+base route names (i.e.: 10Av1 and 10Av2 will be shown as 10A).</td>
+</tr>
+
+<tr>
+<td>TripID</td>
+
+<td>Trip identifier. This can be correlated with the data in our
+bus schedule information as well as bus positions.</td>
+</tr>
+
+<tr>
+<td>VehicleID</td>
+
+<td>Bus identifier. This can be correlated with results returned
+from bus positions.</td>
+</tr>
+</tbody>
+</table></blockquote>
 
 #### Input Parameters
-* `StopID` - _required_ - 7-digit regional stop ID.
+* `StopID` - _required_ - 7-digit regional stop ID.<br/>
     Possible values: 1001195.
 
 ### JSON - Next Buses
+<blockquote><h4 class="text-primary">Description</h4>
 
-> <h4 class="text-primary">Description</h4><br/>
-> <br/>
-> <p>Returns next bus arrival times at a stop.</p><br/>
-> <br/>
-> <h4 class="text-primary">Response Elements</h4><br/>
-> <br/>
-> <table class="table table-condensed table-hover"><br/>
-> <thead><br/>
-> <tr><br/>
-> <th class="col-md-3">Element</th><br/>
-> <br/>
-> <th>Description</th><br/>
-> </tr><br/>
-> </thead><br/>
-> <br/>
-> <tbody><br/>
-> <tr><br/>
-> <td>Predictions</td><br/>
-> <br/>
-> <td><br/>
-> Array containing bus predictions (<a href=<br/>
-> "#NextBusPrediction">NextBusPrediction</a>).<br/>
-> </td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>StopName</td><br/>
-> <br/>
-> <td>Full name of the given StopID.</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td colspan="2"><br/>
-> <div class="text-primary" style="margin-top: 1em"><br/>
-> <a id="NextBusPrediction" name=<br/>
-> "NextBusPrediction">NextBusPrediction Elements</a><br/>
-> </div><br/>
-> </td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>DirectionNum</td><br/>
-> <br/>
-> <td>Denotes a binary direction (0 or 1) of the bus. There is no<br/>
-> specific mapping to direction, but a different value for the same<br/>
-> route signifies that the buses are traveling in opposite<br/>
-> directions. Use the DirectionText element to show the actual<br/>
-> destination of the bus.</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>DirectionText</td><br/>
-> <br/>
-> <td>Customer-friendly description of direction and destination for<br/>
-> a bus.</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>Minutes</td><br/>
-> <br/>
-> <td>Minutes until bus arrival at this stop. Numeric value.</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>RouteID</td><br/>
-> <br/>
-> <td>Base route name as shown on the bus. This can be used in other<br/>
-> bus-related methods. Note that all variants will be shown as their<br/>
-> base route names (i.e.: 10Av1 and 10Av2 will be shown as 10A).</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>TripID</td><br/>
-> <br/>
-> <td>Trip identifier. This can be correlated with the data in our<br/>
-> bus schedule information as well as bus positions.</td><br/>
-> </tr><br/>
-> <br/>
-> <tr><br/>
-> <td>VehicleID</td><br/>
-> <br/>
-> <td>Bus identifier. This can be correlated with results returned<br/>
-> from bus positions.</td><br/>
-> </tr><br/>
-> </tbody><br/>
-> </table>
+<p>Returns next bus arrival times at a stop.</p>
+
+<h4 class="text-primary">Response Elements</h4>
+
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th class="col-md-3">Element</th>
+
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Predictions</td>
+
+<td>
+Array containing bus predictions (<a href=
+"#NextBusPrediction">NextBusPrediction</a>).
+</td>
+</tr>
+
+<tr>
+<td>StopName</td>
+
+<td>Full name of the given StopID.</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<div class="text-primary" style="margin-top: 1em">
+<a id="NextBusPrediction" name=
+"NextBusPrediction">NextBusPrediction Elements</a>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>DirectionNum</td>
+
+<td>Denotes a binary direction (0 or 1) of the bus. There is no
+specific mapping to direction, but a different value for the same
+route signifies that the buses are traveling in opposite
+directions. Use the DirectionText element to show the actual
+destination of the bus.</td>
+</tr>
+
+<tr>
+<td>DirectionText</td>
+
+<td>Customer-friendly description of direction and destination for
+a bus.</td>
+</tr>
+
+<tr>
+<td>Minutes</td>
+
+<td>Minutes until bus arrival at this stop. Numeric value.</td>
+</tr>
+
+<tr>
+<td>RouteID</td>
+
+<td>Base route name as shown on the bus. This can be used in other
+bus-related methods. Note that all variants will be shown as their
+base route names (i.e.: 10Av1 and 10Av2 will be shown as 10A).</td>
+</tr>
+
+<tr>
+<td>TripID</td>
+
+<td>Trip identifier. This can be correlated with the data in our
+bus schedule information as well as bus positions.</td>
+</tr>
+
+<tr>
+<td>VehicleID</td>
+
+<td>Bus identifier. This can be correlated with results returned
+from bus positions.</td>
+</tr>
+</tbody>
+</table></blockquote>
 
 #### Input Parameters
-* `StopID` - _required_ - 7-digit regional stop ID.
+* `StopID` - _required_ - 7-digit regional stop ID.<br/>
     Possible values: 1001195.
 
 ## License
